@@ -2,8 +2,8 @@ import express from 'express';
 import dotenv from 'dotenv';
 import connectDB from './utils/db.js';
 dotenv.config();
-import userRoute from './routes/userRoute.js'
-import authRoute from './routes/authRoute.js'
+import userRoute from './routes/userRoute.js';
+import authRoute from './routes/authRoute.js';
 
 const app = express();
 
@@ -11,7 +11,7 @@ const app = express();
 connectDB();
 
 // Middleware
-app.use(express.json())
+app.use(express.json());
 
 // Routes
 app.use('/api/user', userRoute);

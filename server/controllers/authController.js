@@ -1,5 +1,6 @@
 import User from '../models/User.js';
 import bcrypt from 'bcryptjs';
+import { errorHandler } from '../utils/error.js';
 
 export const singUp = async (req, res) => {
   const { username, email, password } = req.body;
